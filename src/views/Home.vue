@@ -1,25 +1,43 @@
 <template>
-  <div class="home" style="height: 100vh; background: rgba(34, 34, 34, 1)">
-    <b-container fluid class="h-100">
-      <b-row cols="12" class="h-100">
-        <b-col cols="3" class="text-light">
-          <h1>sidebar</h1>
-        </b-col>
-        <b-col cols="9" class="h-100" style="">
-          <b-navbar toggleable="lg" type="dark">
-            <b-navbar-brand href="#">NavBar</b-navbar-brand>
-          </b-navbar>
-            <div
-              class="d-inline-block w-100 bg-light p-4"
-            >
-              <h1>Home</h1>
-            </div>
-        </b-col>
-      </b-row>
-    </b-container>
+  <div class="home">
+    <div class="mx-5 mx-auto">
+      <div class="home-block d-flex">
+        <section class="home-sidebar">
+          Sidebar
+        </section>
+        <section class="home-main">
+          <nav class="home-navbar">Navbar</nav>
+          <main class="home-content">Main</main>
+        </section>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-export default {};
+
+export default {
+  
+}
 </script>
+
+<style scoped>
+.home-block {
+  background-color: aquamarine;
+  height: 100vh;
+}
+.home-sidebar {
+  background-color: bisque;
+  width: 20%;
+}
+.home-navbar {
+  background-color: sandybrown;
+}
+.home-main {
+  background-color: silver;
+  width: 80%;
+}
+.home-content {
+  background-color: skyblue;
+}
+</style>
