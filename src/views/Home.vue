@@ -1,11 +1,13 @@
 <template>
-  <div class="home">
-    <div class="mx-5 mx-auto">
+  <div class="home text-white">
+    <div class="container">
       <div class="home-block d-flex">
-        <section class="home-sidebar">
+        <!-- Main Sidebar -->
+        <section class="home-sidebar border-end border-white px-3">
           Sidebar
+          <Collectibles />
         </section>
-        <section class="home-main">
+        <section class="home-main flex-grow-1">
           <nav class="home-navbar">Navbar</nav>
           <main class="home-content">Main</main>
         </section>
@@ -15,29 +17,27 @@
 </template>
 
 <script>
-
+import Collectibles from '@/components/Collectibles'
 export default {
-  
+  components: {
+    Collectibles
+  }
 }
 </script>
 
 <style scoped>
 .home-block {
-  background-color: aquamarine;
   height: 100vh;
 }
 .home-sidebar {
-  background-color: bisque;
-  width: 20%;
+  background-color: #222222;
 }
 .home-navbar {
-  background-color: sandybrown;
+  background-color: #222222;
 }
 .home-main {
-  background-color: silver;
-  width: 80%;
+  background-color: skyblue;
 }
 .home-content {
-  background-color: skyblue;
 }
 </style>
