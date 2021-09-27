@@ -1,11 +1,15 @@
 <template>
     <div>
         <div class="my-5">
+
             <div class="d-flex justify-content-between my-2">
-                <div @click="showMore"><img src="../assets/up-arrow.png" alt="Arrow icon"></div>
-                <div class="collectibles-title">Collectibles</div>
+                <div class="d-flex align-items-center">
+                    <div @click="showMore" class="me-2"><img src="../assets/up-arrow.png" alt="Arrow icon"></div>
+                    <div class="collectibles-title">Collectibles</div>
+                </div>
                 <div><img src="../assets/dots.png" alt="Dot icon"></div>
             </div>
+
             <div v-if="showCollectibles">
                 <div v-for="collectible in collectiblesOne" :key="collectible.name" class="collectibles-block d-flex justify-content-center align-items-center flex-wrap rounded-3">
 
@@ -100,7 +104,7 @@ export default {
     padding: 20px 20px 10px 20px;
 }
 .collectibles-title {
-    font-size: 20px;
+    font-size: 16px;
 }
 .collectibles-item-box {
     width: 43.5%;

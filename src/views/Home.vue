@@ -10,10 +10,10 @@
             <div class="home-sidebar__logo-text fw-bold">QuestNFT</div>
           </div>
           <div>
-            <Collectibles />
+            <ArmyComponent />
           </div>
           <div>
-            <ArmyComponent />
+            <Collectibles />
           </div>
 
         </section>
