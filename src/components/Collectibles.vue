@@ -37,7 +37,7 @@
 export default {
     data() {
         return {
-            showCollectibles: true,
+            showCollectibles: false,
             collectibles: [
                 {
                     name: "Power Stone",
