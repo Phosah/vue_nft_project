@@ -83,11 +83,11 @@ export default {
   border-radius: 6px;
 }
 .caret{
-  transform: rotate(0deg);
+    transform: rotate(180deg);
   cursor: pointer;
 }
 .caret.rotate{
-  transform: rotate(180deg);
+    transform: rotate(0deg);
 }
 
 .rect-box {
