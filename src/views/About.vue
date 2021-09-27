@@ -16,6 +16,7 @@
           <Navbar />
           </nav>
           <main class="home-content">
+            <ShowGeolocation />
             <Cards />
           </main>
         </section>
@@ -30,13 +31,15 @@ import Collectibles from "@/components/Collectibles.vue"
 import Cards from '@/components/cards.vue'
 import Navbar from "../components/Navbar.vue"
 import AllianceComponent from "../components/AllianceComponent.vue"
+import ShowGeolocation from "../components/showGeolocation.vue"
 export default {
   components: {
     ArmyComponent,
     Collectibles,
     Cards,
     Navbar,
-    AllianceComponent
+    AllianceComponent,
+    ShowGeolocation
   }
 }
 </script>
