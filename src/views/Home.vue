@@ -1,24 +1,20 @@
 <template>
-  <div class="home text-white">
-    <div class="container">
+  <div class="home">
+    <div class="mx-5 mx-auto">
       <div class="home-block d-flex">
-        <!-- Main Sidebar -->
-        <section class="home-sidebar border-end border-white px-3">
-          <div class="home-sidebar__logo-box d-flex align-items-center py-2">
+        <section class="home-sidebar">
+          <div class="home-sidebar__logo-box d-flex align-items-center">
             <div class="me-2"><img src="../assets/logo.png" alt="Logo"></div>
             <div class="home-sidebar__logo-text fw-bold">QuestNFT</div>
           </div>
-          <div>
-            <ArmyComponent />
-          </div>
-          <div>
-            <Collectibles />
-          </div>
-
+          <ArmyComponent />
+          <Collectibles />
         </section>
-        <section class="home-main flex-grow-1">
+        <section class="home-main">
           <nav class="home-navbar">Navbar</nav>
-          <main class="home-content">Main</main>
+          <main class="home-content">
+            <Cards />
+          </main>
         </section>
       </div>
     </div>
@@ -26,37 +22,48 @@
 </template>
 
 <script>
-import Collectibles from '@/components/Collectibles'
-import ArmyComponent from '../components/armyComponent.vue'
+import ArmyComponent from "@/components/armyComponent.vue"
+import Collectibles from "@/components/Collectibles.vue"
+import Cards from '@/components/cards.vue'
 export default {
   components: {
+    ArmyComponent,
     Collectibles,
-    ArmyComponent
+    Cards
   }
 }
 </script>
 
 <style scoped>
 .home-block {
+  background-color: aquamarine;
   height: 100vh;
 }
 .home-sidebar {
-  background-color: #222222;
+  background-color: rgba(34, 34, 34, 1);
+  width: 25%;
+  padding: 30px;
+  overflow-y: scroll;
 }
 .home-sidebar__logo-box {
-  margin-top: 20px;
   margin-bottom: 40px;
 }
 .home-sidebar__logo-text {
   font-size: 24px;
+  color: #fff;
+  letter-spacing: 0.3rem;
+}
+.home-sidebar::-webkit-scrollbar{
+  width: 7px;
 }
 .home-navbar {
-  color: #fff;
-  background-color: #222222;
+  background-color: sandybrown;
 }
 .home-main {
-  color: #000;
+  background-color: silver;
+  width: 75%;
 }
 .home-content {
+  background-color: skyblue;
 }
 </style>
