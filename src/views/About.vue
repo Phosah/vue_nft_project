@@ -4,6 +4,7 @@
       <div class="home-block d-flex">
         <section class="home-sidebar">
           <ArmyComponent />
+          <Collectibles />
         </section>
         <section class="home-main">
           <nav class="home-navbar">Navbar</nav>
@@ -16,9 +17,11 @@
 
 <script>
 import ArmyComponent from "@/components/armyComponent.vue"
+import Collectibles from "@/components/Collectibles.vue"
 export default {
   components: {
-    ArmyComponent
+    ArmyComponent,
+    Collectibles
   }
 }
 </script>
