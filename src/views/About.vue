@@ -3,6 +3,10 @@
     <div class="mx-5 mx-auto">
       <div class="home-block d-flex">
         <section class="home-sidebar">
+          <div class="home-sidebar__logo-box d-flex align-items-center">
+            <div class="me-2"><img src="../assets/logo.png" alt="Logo"></div>
+            <div class="home-sidebar__logo-text fw-bold">QuestNFT</div>
+          </div>
           <ArmyComponent />
           <Collectibles />
         </section>
@@ -36,6 +40,14 @@ export default {
   width: 25%;
   padding: 30px;
   overflow-y: scroll;
+}
+.home-sidebar__logo-box {
+  margin-bottom: 40px;
+}
+.home-sidebar__logo-text {
+  font-size: 24px;
+  color: #fff;
+  letter-spacing: 0.3rem;
 }
 .home-sidebar::-webkit-scrollbar{
   width: 7px;
