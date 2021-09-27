@@ -107,7 +107,7 @@ export default {
     font-size: 16px;
 }
 .collectibles-item-box {
-    width: 43.5%;
+    width: 43.8%;
 }
 .collectibles-item__icon {
     width: 10px;
