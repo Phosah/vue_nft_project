@@ -5,6 +5,10 @@
         <!-- Main Sidebar -->
         <section class="home-sidebar border-end border-white px-3">
           Sidebar
+          <div class="d-flex align-items-center py-2">
+            <div class="me-2"><img src="../assets/logo.png" alt="Logo"></div>
+            <div class="home-sidebar__logo-text fw-bold">QuestNFT</div>
+          </div>
           <Collectibles />
         </section>
         <section class="home-main flex-grow-1">
@@ -31,6 +35,9 @@ export default {
 }
 .home-sidebar {
   background-color: #222222;
+}
+.home-sidebar__logo-text {
+  font-size: 24px;
 }
 .home-navbar {
   background-color: #222222;
