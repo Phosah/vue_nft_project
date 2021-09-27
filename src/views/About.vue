@@ -35,6 +35,10 @@ export default {
   background-color: rgba(34, 34, 34, 1);
   width: 25%;
   padding: 30px;
+  overflow-y: scroll;
+}
+.home-sidebar::-webkit-scrollbar{
+  width: 7px;
 }
 .home-navbar {
   background-color: sandybrown;
