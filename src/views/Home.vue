@@ -9,7 +9,13 @@
             <div class="me-2"><img src="../assets/logo.png" alt="Logo"></div>
             <div class="home-sidebar__logo-text fw-bold">QuestNFT</div>
           </div>
-          <Collectibles />
+          <div>
+            <Collectibles />
+          </div>
+          <div>
+            <ArmyComponent />
+          </div>
+
         </section>
         <section class="home-main flex-grow-1">
           <nav class="home-navbar">Navbar</nav>
@@ -22,9 +28,11 @@
 
 <script>
 import Collectibles from '@/components/Collectibles'
+import ArmyComponent from '../components/armyComponent.vue'
 export default {
   components: {
-    Collectibles
+    Collectibles,
+    ArmyComponent
   }
 }
 </script>
@@ -40,10 +48,11 @@ export default {
   font-size: 24px;
 }
 .home-navbar {
+  color: #fff;
   background-color: #222222;
 }
 .home-main {
-  background-color: skyblue;
+  color: #000;
 }
 .home-content {
 }

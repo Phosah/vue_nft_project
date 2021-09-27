@@ -6,40 +6,41 @@
                 <div class="collectibles-title">Collectibles</div>
                 <div><img src="../assets/dots.png" alt="Dot icon"></div>
             </div>
+            <div v-if="showCollectibles">
+                <div v-for="collectible in collectiblesOne" :key="collectible.name" class="collectibles-block d-flex justify-content-center align-items-center flex-wrap rounded-3">
 
-            <div v-for="collectible in collectiblesOne" :key="collectible.name" class="collectibles-block d-flex justify-content-center align-items-center flex-wrap rounded-3">
-
-                <div class="collectibles-item-box mb-3 mx-2">
-                    <div class=""><img class="collectibles-item__photo" :src="collectible.image" alt="Power Stone"></div>
-                    <p class="mb-1 text-center">{{ collectible.name }}</p>
-                    <div class="d-flex justify-content-center">
-                        <div class="collectibles-item__icon-box d-flex align-items-center me-2 px-2 rounded-pill">
-                            <div class="me-1"><img class="collectibles-item__icon" src="../assets/fire.png" alt="Fire photo"></div>
-                            <div class="collectibles-item__text">{{ collectible.firePoints }}</div>
-                        </div>
-                        <div class="d-flex collectibles-item__icon-box align-items-center px-2 rounded-pill">
-                            <div class="me-1"><img class="collectibles-item__icon" src="../assets/lightening.png" alt="Fire photo"></div>
-                            <div class="collectibles-item__text">{{ collectible.lightPoints }}</div>
+                    <div class="collectibles-item-box mb-3 mx-2">
+                        <div class=""><img class="collectibles-item__photo" :src="collectible.image" alt="Power Stone"></div>
+                        <p class="mb-1 text-center">{{ collectible.name }}</p>
+                        <div class="d-flex justify-content-center">
+                            <div class="collectibles-item__icon-box d-flex align-items-center me-2 px-2 rounded-pill">
+                                <div class="me-1"><img class="collectibles-item__icon" src="../assets/fire.png" alt="Fire photo"></div>
+                                <div class="collectibles-item__text">{{ collectible.firePoints }}</div>
+                            </div>
+                            <div class="d-flex collectibles-item__icon-box align-items-center px-2 rounded-pill">
+                                <div class="me-1"><img class="collectibles-item__icon" src="../assets/lightening.png" alt="Fire photo"></div>
+                                <div class="collectibles-item__text">{{ collectible.lightPoints }}</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!--  -->
+                    <!--  -->
 
-                 <div class="collectibles-item-box mb-3 mx-2">
-                    <div class=""><img class="collectibles-item__photo" :src="collectible.image" alt="Power Stone"></div>
-                    <p class="mb-1 text-center">{{ collectible.name }}</p>
-                    <div class="d-flex justify-content-center">
-                        <div class="collectibles-item__icon-box d-flex align-items-center me-2 px-2 rounded-pill">
-                            <div class="me-1"><img class="collectibles-item__icon" src="../assets/fire.png" alt="Fire photo"></div>
-                            <div class="collectibles-item__text">{{ collectible.firePoints }}</div>
-                        </div>
-                        <div class="d-flex collectibles-item__icon-box align-items-center px-2 rounded-pill">
-                            <div class="me-1"><img class="collectibles-item__icon" src="../assets/lightening.png" alt="Fire photo"></div>
-                            <div class="collectibles-item__text">{{ collectible.lightPoints }}</div>
+                    <div class="collectibles-item-box mb-3 mx-2">
+                        <div class=""><img class="collectibles-item__photo" :src="collectible.image" alt="Power Stone"></div>
+                        <p class="mb-1 text-center">{{ collectible.name }}</p>
+                        <div class="d-flex justify-content-center">
+                            <div class="collectibles-item__icon-box d-flex align-items-center me-2 px-2 rounded-pill">
+                                <div class="me-1"><img class="collectibles-item__icon" src="../assets/fire.png" alt="Fire photo"></div>
+                                <div class="collectibles-item__text">{{ collectible.firePoints }}</div>
+                            </div>
+                            <div class="d-flex collectibles-item__icon-box align-items-center px-2 rounded-pill">
+                                <div class="me-1"><img class="collectibles-item__icon" src="../assets/lightening.png" alt="Fire photo"></div>
+                                <div class="collectibles-item__text">{{ collectible.lightPoints }}</div>
+                            </div>
                         </div>
                     </div>
+                    <!--  -->
                 </div>
-                <!--  -->
             </div>
         </div>
     </div>
@@ -84,7 +85,7 @@ export default {
     },
     methods: {
         showMore() {
-            this.showCollectibles = false;
+            this.showCollectibles = !this.showCollectibles;
 
         }
     }
