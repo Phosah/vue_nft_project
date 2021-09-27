@@ -27,6 +27,7 @@ export default {
     return {
       markers: [],
       center: home,
+      paths: []
     };
   },
   methods: {
