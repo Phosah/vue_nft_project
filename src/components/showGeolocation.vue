@@ -4,7 +4,7 @@
     :zoom="7"
     map-type-id="terrain"
     style="width: 100%; height: 80vh"
-  >
+  > 
     <GmapMarker
       :key="index"
       v-for="(m, index) in markers"
