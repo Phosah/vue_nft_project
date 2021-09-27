@@ -9,7 +9,6 @@
                 </div>
                 <div><img src="../assets/dots.png" alt="Dot icon"></div>
             </div>
-
             <div v-if="showCollectibles" >
                 <div class="collectibles-block d-flex justify-content-between align-items-center flex-wrap rounded-3">
 
@@ -51,6 +50,7 @@ export default {
                     image: require("../assets/edga-ring.png"),
                     lightPoints: 22,
                     firePoints: 56
+
                 },
                 {
                     name: "Moon Tear",

@@ -1,11 +1,22 @@
 <template>
-  <div class="home">
-    <div class="mx-5 mx-auto">
+  <div class="home text-white">
+    <div class="container">
       <div class="home-block d-flex">
-        <section class="home-sidebar">
-          Sidebar
+        <!-- Main Sidebar -->
+        <section class="home-sidebar border-end border-white px-3">
+          <div class="home-sidebar__logo-box d-flex align-items-center py-2">
+            <div class="me-2"><img src="../assets/logo.png" alt="Logo"></div>
+            <div class="home-sidebar__logo-text fw-bold">QuestNFT</div>
+          </div>
+          <div>
+            <ArmyComponent />
+          </div>
+          <div>
+            <Collectibles />
+          </div>
+
         </section>
-        <section class="home-main">
+        <section class="home-main flex-grow-1">
           <nav class="home-navbar">Navbar</nav>
           <main class="home-content">Main</main>
         </section>
@@ -15,29 +26,37 @@
 </template>
 
 <script>
-
+import Collectibles from '@/components/Collectibles'
+import ArmyComponent from '../components/armyComponent.vue'
 export default {
-  
+  components: {
+    Collectibles,
+    ArmyComponent
+  }
 }
 </script>
 
 <style scoped>
 .home-block {
-  background-color: aquamarine;
   height: 100vh;
 }
 .home-sidebar {
-  background-color: bisque;
-  width: 20%;
+  background-color: #222222;
+}
+.home-sidebar__logo-box {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.home-sidebar__logo-text {
+  font-size: 24px;
 }
 .home-navbar {
-  background-color: sandybrown;
+  color: #fff;
+  background-color: #222222;
 }
 .home-main {
-  background-color: silver;
-  width: 80%;
+  color: #000;
 }
 .home-content {
-  background-color: skyblue;
 }
 </style>
