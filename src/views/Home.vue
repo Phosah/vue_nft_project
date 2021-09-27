@@ -18,7 +18,9 @@
         </section>
         <section class="home-main flex-grow-1">
           <nav class="home-navbar">Navbar</nav>
-          <main class="home-content">Main</main>
+          <main class="home-content">
+            <Cards />
+          </main>
         </section>
       </div>
     </div>
@@ -28,10 +30,12 @@
 <script>
 import Collectibles from '@/components/Collectibles'
 import ArmyComponent from '../components/armyComponent.vue'
+import Cards from '../components/cards.vue'
 export default {
   components: {
     Collectibles,
-    ArmyComponent
+    ArmyComponent,
+    Cards
   }
 }
 </script>

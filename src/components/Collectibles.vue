@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="my-5">
+        <div class="my-4">
 
             <div class="d-flex justify-content-between my-2">
                 <div class="d-flex align-items-center">
@@ -11,7 +11,7 @@
             </div>
 
             <div v-if="showCollectibles">
-                <div v-for="collectible in collectiblesOne" :key="collectible.name" class="collectibles-block d-flex justify-content-center align-items-center flex-wrap rounded-3">
+                <div v-for="collectible in collectiblesOne" :key="collectible.name" class="collectibles-block d-flex align-items-center rounded-3">
 
                     <div class="collectibles-item-box mb-3 mx-2">
                         <div class=""><img class="collectibles-item__photo" :src="collectible.image" alt="Power Stone"></div>
@@ -67,8 +67,7 @@ export default {
                     image: require("../assets/edga-ring.png"),
                     lightPoints: 22,
                     firePoints: 56
-                }
-
+                },
             ],
             collectiblesTwo: [
                 {
