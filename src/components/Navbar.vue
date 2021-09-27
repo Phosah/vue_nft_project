@@ -287,9 +287,11 @@
         </svg>
       </div>
     </div>
-    <div class="navbarRight">
-      <searchBox/>
-      <div class="navbarlogo2">
+    <div class="navbarLeft">
+      <SearchBox @handleSearch="Search($event)" />
+    </div>
+    <div class="navbarLeft">
+      <div>
         <svg
           width="99"
           height="42"
@@ -646,11 +648,21 @@
 </template>
 
 <script>
-import searchBox from './searchBox.vue'
+import SearchBox from "./SearchBox.vue";
 export default {
   name: "Navbar",
   components: {
-      searchBox
+    SearchBox
+  },
+  data(){
+    return {
+      search: ""
+    }
+  },
+  methods: {
+    Search(search){
+      this.search = search
+    }
   }
 };
 </script>
@@ -688,12 +700,8 @@ export default {
   align-items: center;
   margin-bottom: 0.4rem;
 }
-.navbarRight {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin-right: 1rem;
+.navbarLeft:nth-child(2) {
+  justify-content: flex-end;
 }
 .navbarRight .navbarlogo2 {
  margin-bottom: 0.9rem;
