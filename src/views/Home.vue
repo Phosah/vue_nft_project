@@ -3,10 +3,21 @@
     <div class="mx-5 mx-auto">
       <div class="home-block d-flex">
         <section class="home-sidebar">
-          Sidebar
+          <div class="home-sidebar__logo-box d-flex align-items-center">
+            <div class="me-2"><img src="../assets/logo.png" alt="Logo"></div>
+            <div class="home-sidebar__logo-text fw-bold">QuestNFT</div>
+          </div>
+          <ArmyComponent />
+          <Collectibles />
+          <AllianceComponent />
         </section>
         <section class="home-main">
-          <nav class="home-navbar">Navbar</nav>
+          <nav class="home-navbar">
+          <Navbar />
+          </nav>
+          <main class="home-content">
+            <Cards />
+          </main>
         </section>
       </div>
     </div>
@@ -14,8 +25,19 @@
 </template>
 
 <script>
+import ArmyComponent from "@/components/armyComponent.vue"
+import Collectibles from "@/components/Collectibles.vue"
+import Cards from '@/components/cards.vue'
+import Navbar from "../components/Navbar.vue"
+import AllianceComponent from "../components/AllianceComponent.vue"
 export default {
- 
+  components: {
+    ArmyComponent,
+    Collectibles,
+    Cards,
+    Navbar,
+    AllianceComponent
+  }
 }
 </script>
 
@@ -25,15 +47,28 @@ export default {
   height: 100vh;
 }
 .home-sidebar {
-  background-color: bisque;
-  width: 20%;
+  background-color: rgba(34, 34, 34, 1);
+  width: 25%;
+  padding: 30px;
+  overflow-y: scroll;
+}
+.home-sidebar__logo-box {
+  margin-bottom: 40px;
+}
+.home-sidebar__logo-text {
+  font-size: 24px;
+  color: #fff;
+  letter-spacing: 0.3rem;
+}
+.home-sidebar::-webkit-scrollbar{
+  width: 7px;
 }
 .home-navbar {
-  background-color: sandybrown;
 }
 .home-main {
   background-color: silver;
-  width: 80%;
+  width: 75%;
+  position: relative;
 }
 .home-content {
   background-color: skyblue;
