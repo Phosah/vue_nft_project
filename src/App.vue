@@ -1,6 +1,5 @@
 <template>
   <div>
-    
     <router-view/>
   </div>
 </template>
@@ -15,5 +14,28 @@
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 15px;
+}
+
+div,
+main,
+article,
+section,
+header,
+nav,
+footer,
+aside {
+    display: block;
 }
 </style>
