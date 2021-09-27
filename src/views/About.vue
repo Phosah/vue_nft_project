@@ -1,5 +1,46 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="home">
+    <div class="mx-5 mx-auto">
+      <div class="home-block d-flex">
+        <section class="home-sidebar">
+          <ArmyComponent />
+        </section>
+        <section class="home-main">
+          <nav class="home-navbar">Navbar</nav>
+          <main class="home-content">Main</main>
+        </section>
+      </div>
+    </div>
   </div>
 </template>
+
+<script>
+import ArmyComponent from "@/components/armyComponent.vue"
+export default {
+  components: {
+    ArmyComponent
+  }
+}
+</script>
+
+<style scoped>
+.home-block {
+  background-color: aquamarine;
+  height: 100vh;
+}
+.home-sidebar {
+  background-color: rgba(34, 34, 34, 1);
+  width: 25%;
+  padding: 30px;
+}
+.home-navbar {
+  background-color: sandybrown;
+}
+.home-main {
+  background-color: silver;
+  width: 75%;
+}
+.home-content {
+  background-color: skyblue;
+}
+</style>
