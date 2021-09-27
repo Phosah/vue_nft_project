@@ -287,8 +287,9 @@
         </svg>
       </div>
     </div>
-    <div class="navbarLeft">
-      <div>
+    <div class="navbarRight">
+      <searchBox/>
+      <div class="navbarlogo2">
         <svg
           width="99"
           height="42"
@@ -645,21 +646,24 @@
 </template>
 
 <script>
+import searchBox from './searchBox.vue'
 export default {
   name: "Navbar",
+  components: {
+      searchBox
+  }
 };
 </script>
 
 <style scoped>
 .navbar {
   width: 100%;
-  height: 69px;
+  height: 67px;
   background: #222222;
-  padding: 1rem;
+  padding: 9px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 
 .navbarLeft {
@@ -678,16 +682,20 @@ export default {
   margin-right: 1rem;
 }
 .navbarLeft .navbarlogo1 {
-  padding: 0;
   font-size: 1rem;
-  margin-top: 0;
   margin-right: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.4rem;
 }
-.navbarLeft {
-  position: relative;
+.navbarRight {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-around;
+  align-items: center;
   margin-right: 1rem;
+}
+.navbarRight .navbarlogo2 {
+ margin-bottom: 0.9rem;
 }
 </style>
