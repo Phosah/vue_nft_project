@@ -14,7 +14,6 @@
     </div>
 
     <div class='card-3'>
-     
       <img src="@/assets/darth.png" alt="" >
     <div class= "text-container small"><span class= "big-font">Darth</span><br><span>Soldier</span></div>
     </div>
