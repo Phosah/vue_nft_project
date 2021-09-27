@@ -7,7 +7,6 @@
         </section>
         <section class="home-main">
           <nav class="home-navbar">Navbar</nav>
-          <main class="home-content">Main</main>
         </section>
       </div>
     </div>
@@ -15,9 +14,8 @@
 </template>
 
 <script>
-
 export default {
-  
+ 
 }
 </script>
 
