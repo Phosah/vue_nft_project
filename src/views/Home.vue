@@ -9,6 +9,7 @@
           </div>
           <ArmyComponent />
           <Collectibles />
+          <AllianceComponent />
         </section>
         <section class="home-main">
           <nav class="home-navbar">
@@ -28,12 +29,14 @@ import ArmyComponent from "@/components/armyComponent.vue"
 import Collectibles from "@/components/Collectibles.vue"
 import Cards from '@/components/cards.vue'
 import Navbar from "../components/Navbar.vue"
+import AllianceComponent from "../components/AllianceComponent.vue"
 export default {
   components: {
     ArmyComponent,
     Collectibles,
     Cards,
-    Navbar
+    Navbar,
+    AllianceComponent
   }
 }
 </script>
