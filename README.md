@@ -24,4 +24,4 @@ yarn run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## App demo
-[Vue Nft](https://deploy-preview-12--vue-nft-project.netlify.app/)
+[Vue Nft](https://vue-nft-project.netlify.app/)
