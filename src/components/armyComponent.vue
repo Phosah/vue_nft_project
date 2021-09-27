@@ -68,7 +68,7 @@ export default {
 }
 
 .armyComp {
-  width: 250px;
+  width: 300px;
   min-height: 142px;
   padding: 1.25rem 0;
   background-color: #333333;
