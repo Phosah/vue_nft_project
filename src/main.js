@@ -10,7 +10,6 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import * as VueGoogleMaps from 'vue2-google-maps'
 
-
 Vue.use(BootstrapVue)
 Vue.use(BootstrapVueIcons)
 

@@ -40,7 +40,7 @@ export default {
     Navbar,
     AllianceComponent,
     ShowGeolocation
-  }
+  },
 }
 </script>
 
