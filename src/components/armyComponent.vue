@@ -1,6 +1,6 @@
 <template>
 <div id="army-comp">
-  <img src="../assets/armyComponent/caret.png" @click="showArmy = !showArmy">
+  <img src="../assets/armyComponent/caret.png" @click="showArmyMood" ref="caret" class="caret">
   <span class="army-heading">Army</span>
   <div class="armyComp" v-if="showArmy">
         <div v-for="army in armies" v-bind:key="army.id" class="d-flex army align-items-center justify-content-around">
@@ -23,6 +23,7 @@
 
 <script>
 export default {
+  name: "ArmyComponent",
   data() {
     return {
       showArmy: false,
@@ -52,6 +53,12 @@ export default {
     }
   },
   methods: {
+    showArmyMood(){
+      this.showArmy = !this.showArmy
+      this.$refs.caret.classList.toggle("rotate")
+    }
+  },
+  watch: {
   }
 }
 </script>
@@ -68,12 +75,19 @@ export default {
 }
 
 .armyComp {
-  width: 300px;
+  width: 100%;
   min-height: 142px;
   padding: 1.25rem 0;
   background-color: #333333;
   font-family: 'Quattrocento Sans', sans-serif;
   border-radius: 6px;
+}
+.caret{
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+.caret.rotate{
+  transform: rotate(180deg);
 }
 
 .rect-box {
