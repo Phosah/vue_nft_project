@@ -1,5 +1,5 @@
 <template>
-  <div class="searchBox">
+  <div class="SearchBox">
     <input type="text" @input="search" v-model="searchValue" placeholder="Search Cities, Players and Nfts etc." :class="search">
   </div>
 </template>

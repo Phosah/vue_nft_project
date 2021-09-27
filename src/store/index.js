@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-//import searchBox from '../views/component/searchBox.vue'
+//import SearchBox from '../views/component/SearchBox.vue'
 
 Vue.use(Vuex)
 
@@ -12,6 +12,6 @@ export default new Vuex.Store({
   actions: {
   },
   modules: {
-    //searchBox
+    //SearchBox
   }
 })
