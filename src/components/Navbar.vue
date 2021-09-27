@@ -288,6 +288,9 @@
       </div>
     </div>
     <div class="navbarLeft">
+      <SearchBox @handleSearch="Search($event)" />
+    </div>
+    <div class="navbarLeft">
       <div>
         <svg
           width="99"
@@ -645,8 +648,22 @@
 </template>
 
 <script>
+import SearchBox from "./searchBox.vue";
 export default {
   name: "Navbar",
+  components: {
+    SearchBox
+  },
+  data(){
+    return {
+      search: ""
+    }
+  },
+  methods: {
+    Search(search){
+      this.search = search
+    }
+  }
 };
 </script>
 
@@ -683,11 +700,7 @@ export default {
   margin-top: 0;
   margin-right: 1rem;
 }
-.navbarLeft {
-  position: relative;
-  display: flex;
-  flex-direction: row;
+.navbarLeft:nth-child(2) {
   justify-content: flex-end;
-  margin-right: 1rem;
 }
 </style>
