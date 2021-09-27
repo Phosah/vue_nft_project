@@ -1,12 +1,13 @@
 <template>
   <div id="alliance-comp">
-    <img
-      src="@/assets/allianceComponent/caret.png"
-      @click="showAllianceMood"
-      ref="caret"
-      class="caret"
-    />
-    <span class="alliance-heading">Alliance</span>
+    <div class="d-flex justify-content-between my-2">
+        <div class="d-flex align-items-center">
+            <div @click="showAllianceMood" class="me-2 caret" ref="caret"><img src="@/assets/allianceComponent/caret.png" alt="Arrow icon" ></div>
+            <div class="alliance-heading">Alliance</div>
+        </div>
+        <div><img src="@/assets/dots.png" alt="Dot icon"></div>
+    </div>
+
     <div class="allianceComp" v-if="showAlliance">
       <div class="mb-3 d-flex justify-content-start">
         <img class="ms-4" src="@/assets/allianceComponent/group-0.png" />
@@ -72,7 +73,6 @@ export default {
 
 .alliance-heading {
   font-size: 0.875rem;
-  margin-left: 0.75rem;
 }
 .caret{
   transform: rotate(0deg);
