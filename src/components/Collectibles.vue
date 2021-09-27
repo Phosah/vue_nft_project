@@ -9,7 +9,6 @@
                 </div>
                 <div><img src="../assets/dots.png" alt="Dot icon"></div>
             </div>
-
             <div v-if="showCollectibles" >
                 <div class="collectibles-block d-flex justify-content-between align-items-center flex-wrap rounded-3">
 
@@ -51,8 +50,9 @@ export default {
                     image: require("../assets/edga-ring.png"),
                     lightPoints: 22,
                     firePoints: 56
+
                 },
-                 {
+                {
                     name: "Moon Tear",
                     image: require("../assets/moon-tear.png"),
                     lightPoints: 16,
@@ -64,12 +64,14 @@ export default {
                     lightPoints: 18,
                     firePoints: 39
                 },
-            ]
+
+            ],
         }
     },
     methods: {
         showMore() {
             this.showCollectibles = !this.showCollectibles;
+            this.$refs.caret.classList.toggle("rotate");
         }
     }
     
@@ -79,14 +81,23 @@ export default {
 <style scoped>
 .collectibles-block {
     background-color: #333333;
-    width: 300px;
-    padding: 20px 20px 10px 20px;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
 }
 .collectibles-title {
     font-size: 16px;
+    color: #fff;
+}
+.caret{
+    transform: rotate(180deg);
+  cursor: pointer;
+}
+.caret.rotate{
+    transform: rotate(0deg);
 }
 .collectibles-item-box {
-    width: 43.8%;
+    width: 40%;
 }
 .collectibles-item__icon {
     width: 10px;
