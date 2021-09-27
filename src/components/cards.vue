@@ -33,6 +33,8 @@ export default{};
   background: transparent;
   box-sizing: border-box;
   position: absolute;
+  bottom: 30px;
+  left: 0;
   width: 203px;
   height: 151.01px;
 }

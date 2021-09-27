@@ -11,7 +11,9 @@
           <Collectibles />
         </section>
         <section class="home-main">
-          <nav class="home-navbar">Navbar</nav>
+          <nav class="home-navbar">
+          <Navbar />
+          </nav>
           <main class="home-content">
             <Cards />
           </main>
@@ -25,11 +27,13 @@
 import ArmyComponent from "@/components/armyComponent.vue"
 import Collectibles from "@/components/Collectibles.vue"
 import Cards from '@/components/cards.vue'
+import Navbar from "../components/Navbar.vue"
 export default {
   components: {
     ArmyComponent,
     Collectibles,
-    Cards
+    Cards,
+    Navbar
   }
 }
 </script>
@@ -57,11 +61,11 @@ export default {
   width: 7px;
 }
 .home-navbar {
-  background-color: sandybrown;
 }
 .home-main {
   background-color: silver;
   width: 75%;
+  position: relative;
 }
 .home-content {
   background-color: skyblue;
