@@ -1,12 +1,12 @@
 <template>
-  <div class="searchBox">
+  <div class="SearchBox">
     <input type="text" @input="search" v-model="searchValue" placeholder="Search Cities, Players and Nfts etc." :class="search">
   </div>
 </template>
 
 <script>
   export default {
-  name: 'searchBox',
+  name: 'SearchBox',
   data(){
     return {
       data(){
@@ -25,7 +25,9 @@
 </script>
 
 <style scoped>
-
+.SearchBox{
+    margin-right: 90px;
+}
 input{
   border: 1px solid grey;
   border-radius: 5px;
