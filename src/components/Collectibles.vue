@@ -80,7 +80,7 @@ export default {
 .collectibles-block {
     background-color: #333333;
     width: 100%;
-    padding: 20px;
+    padding: 25px 20px;
     color: #fff;
 }
 .collectibles-title {
