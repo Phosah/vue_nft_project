@@ -1,23 +1,32 @@
 <template>
 <div id="army-comp">
-  <img src="../assets/armyComponent/caret.png" @click="showArmyMood" ref="caret" class="caret">
-  <span class="army-heading">Army</span>
+  
+  <!-- <img src="../assets/armyComponent/caret.png" @click="showArmyMood" ref="caret" class="caret">
+  <span class="army-heading">Army</span> -->
+
+  <!-- Changes made here -->
+  <div class="d-flex align-items-center my-2">
+      <div @click="showArmyMood" class="me-2 caret" ref="caret"><img src="../assets/armyComponent/caret.png" alt="Arrow icon" ></div>
+      <div class="army-heading">Army</div>
+  </div>
+  <!--  -->
+
   <div class="armyComp" v-if="showArmy">
-        <div v-for="army in armies" v-bind:key="army.id" class="d-flex army align-items-center justify-content-around">
-            <div class="rect-box d-flex justify-content-center align-items-center">
-                <img :src="army.logo">
-                <span>{{ army.value }}</span>
-            </div>
+    <div v-for="army in armies" v-bind:key="army.id" class="d-flex army align-items-center justify-content-between">
+      <div class="rect-box d-flex justify-content-center align-items-center">
+            <img :src="army.logo">
+            <span>{{ army.value }}</span>
+      </div>
 
-            <div class="icon-img d-flex justify-content-between">
-                <img :src="army.icon">
-                <img :src="army.icon">
-                <img :src="army.icon">
-            </div>
+      <div class="icon-img d-flex justify-content-between">
+          <img :src="army.icon">
+          <img :src="army.icon">
+          <img :src="army.icon">
+      </div>
 
-            <span class="score">+{{ army.score }}</span>
-        </div>
-    </div>    
+      <span class="score">+{{ army.score }}</span>
+    </div>
+  </div>    
 </div>
 </template>
 
@@ -70,14 +79,14 @@ export default {
 }
 
 .army-heading {
-  font-size: 0.875rem;
-  margin-left: 0.75rem;
+  font-size: 14px;
+  /* margin-left: 0.75rem; */
 }
 
 .armyComp {
   width: 100%;
   min-height: 142px;
-  padding: 1.25rem 0;
+  padding: 20px;
   background-color: #333333;
   font-family: 'Quattrocento Sans', sans-serif;
   border-radius: 6px;
@@ -95,7 +104,7 @@ export default {
     height: 26px;
     border: 1px solid transparent;
     border-radius: 30px;
-    font-size: 0.6875rem;
+    font-size: 12px;
     background-image: linear-gradient(#333, #333), linear-gradient(45deg, #FC5C7D, #6A82FB);
     background-origin: border-box;
     background-clip: content-box, border-box;
