@@ -25,15 +25,18 @@
 </script>
 
 <style scoped>
-
+.SearchBox {
+  margin-right: 2rem;
+  padding: 0.1rem;
+}
 input{
   border: 1px solid grey;
-  border-radius: 5px;
+  border-radius: 10px;
   height: 100%;
   width:400px;
   outline: 0;
   font-size: 15px;
-  padding: 6px;
+  padding: 10px;
   background-color: rgba(51, 51, 51, 1);
   float: right;
   transition: .3s;
