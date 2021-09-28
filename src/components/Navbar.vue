@@ -648,7 +648,7 @@
 </template>
 
 <script>
-import SearchBox from "@/components/SearchBox.vue";
+import SearchBox from "@/components/searchBox.vue";
 
 export default {
   name: "Navbar",
