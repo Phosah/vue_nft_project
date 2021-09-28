@@ -95,7 +95,7 @@ export default {
     transform: rotate(0deg);
 }
 .collectibles-item-box {
-    width: 40%;
+    width: 43%;
 }
 .collectibles-item__icon {
     width: 10px;
