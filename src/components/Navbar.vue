@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="navbarRight">
-      <SearchBox @handleSearch="Search($event)"/>
+      <searchBox @handleSearch="Search($event)"/>
       <div class="navbarlogo__1">
         <img src="../assets/noto_coin.png" alt="noto_coin-logo">
         <h3>320</h3>
@@ -33,11 +33,11 @@
 </template>
 
 <script>
-import SearchBox from "@/components/searchBox.vue";
+import searchBox from "@/components/searchBox.vue";
 export default {
   name: "Navbar",
   components: {
-    SearchBox
+    searchBox
   },
   data(){
     return {
