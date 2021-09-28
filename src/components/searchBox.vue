@@ -26,7 +26,7 @@
 
 <style scoped>
 .SearchBox{
-    margin-right: 50px;
+    margin-right: 90px;
 }
 input{
   border: 1px solid grey;

@@ -112,9 +112,7 @@ export default {
   display: flex;
   flex-direction: row;
 }
-.navbarlogo__1:nth-child(1) {
-  margin-left: 2rem;
-}
+
 .navbarlogo__1:nth-child(2) {
   display: flex;
   flex-direction: row;
