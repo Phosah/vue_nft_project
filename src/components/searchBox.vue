@@ -25,7 +25,9 @@
 </script>
 
 <style scoped>
-
+.SearchBox{
+    margin-right: 50px;
+}
 input{
   border: 1px solid grey;
   border-radius: 5px;
