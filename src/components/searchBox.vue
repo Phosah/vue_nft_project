@@ -6,37 +6,34 @@
 
 <script>
   export default {
-  // name: 'SearchBox',
+  name: 'SearchBox',
   data(){
     return {
       data(){
         return{
-          // searchValue: ""
+          searchValue: ""
         }
       }
     }
   },
   methods: {
     search(){
-      // this.$emit('handleSearch', this.searchValue)
+      this.$emit('handleSearch', this.searchValue)
     }
   }
 }
 </script>
 
 <style scoped>
-.SearchBox {
-  margin-right: 2rem;
-  padding: 0.1rem;
-}
+
 input{
   border: 1px solid grey;
-  border-radius: 10px;
+  border-radius: 5px;
   height: 100%;
   width:400px;
   outline: 0;
   font-size: 15px;
-  padding: 10px;
+  padding: 6px;
   background-color: rgba(51, 51, 51, 1);
   float: right;
   transition: .3s;

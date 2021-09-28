@@ -52,14 +52,14 @@ export default {
 .home-sidebar {
   background-color: rgba(34, 34, 34, 1);
   width: 25%;
-  padding: 30px;
+  padding: 20px;
   overflow-y: scroll;
 }
 .home-sidebar__logo-box {
   margin-bottom: 40px;
 }
 .home-sidebar__logo-text {
-  font-size: 24px;
+  font-size: 20px;
   color: #fff;
   letter-spacing: 0.3rem;
 }
