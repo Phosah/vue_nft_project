@@ -1,8 +1,8 @@
 <template>
-  <div class= 'container'>
+  <div class='container'>
     <div class='card-1'>
         <img src="@/assets/vello.png" alt="">
-      <div class= "text-container"><span class= "big-font" style="font-weight: bold; font-size: 14px; line-height: 20px">Vello</span>
+      <div class="text-container"><span class="big-font" style="font-weight: bold; font-size: 14px; line-height: 20px">Vello</span>
       <span class="info">!</span><br>
       <span style="line-height: 0px">Demon Slayer</span>
       </div>
@@ -14,7 +14,6 @@
     </div>
 
     <div class='card-3'>
-     
       <img src="@/assets/darth.png" alt="" >
     <div class= "text-container small"><span class= "big-font">Darth</span><br><span>Soldier</span></div>
     </div>
@@ -52,12 +51,12 @@ export default{};
 }
 .card-2 {
   position: absolute;
-width: 83.49px;
-height: 118.44px;
-top:10%;
-background: linear-gradient(90deg, #A73737 0%, #7A2828 100%);
-border: 1.94165px solid rgba(230, 230, 230, 0.46);
-border-radius: 7.76662px;
+  width: 83.49px;
+  height: 118.44px;
+  top:10%;
+  background: linear-gradient(90deg, #A73737 0%, #7A2828 100%);
+  border: 1.94165px solid rgba(230, 230, 230, 0.46);
+  border-radius: 7.76662px;
 }
 .card-3  {
   position: absolute;
@@ -104,7 +103,7 @@ img{
   background-color: rgb(110, 34, 34);
 }
 .big-font{
- font-family: Neue Helvetica;
+  font-family: Neue Helvetica;
   font-style: normal;
   font-weight: bold;
   font-size: 9.70827px;
