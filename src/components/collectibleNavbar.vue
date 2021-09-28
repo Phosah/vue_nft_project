@@ -21,7 +21,7 @@ export default {
 .hello .CollectibleNav{
   font-size:14px;
   padding:0px;
-  margin-left:40px;
+  margin-left:30px;
 }
 .hello .CollectibleNav .all,
 .hello .CollectibleNav .art,
