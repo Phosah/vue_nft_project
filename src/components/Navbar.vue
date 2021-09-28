@@ -95,7 +95,7 @@ export default {
   flex-direction: column;
 }
 .navbarlogo:nth-child(2) {
-  margin-top: 0.1rem;
+  /* margin-top: 0.1rem; */
 }
 .navbarlogo img {
   margin: 0.2rem;
