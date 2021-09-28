@@ -10,7 +10,7 @@
 
     <div class="allianceComp" v-if="showAlliance">
       <div class="mb-3 d-flex justify-content-start">
-        <img class="ms-4" src="@/assets/allianceComponent/group-0.png" />
+        <img class="" src="@/assets/allianceComponent/group-0.png" />
         <img
           class="ms-1"
           src="@/assets/allianceComponent/emojione_handshake-1.png"
@@ -20,15 +20,15 @@
       <div
         v-for="alliance in alliances"
         v-bind:key="alliance.id"
-        class="d-flex alliance align-items-center justify-content-between"
+        class="alliance-block fw-bold d-flex alliance align-items-center justify-content-between"
       >
-        <div class="mx-4">
+        <div>
           <span>{{ alliance.name }} </span>
 
           <img :src="alliance.icon" />
         </div>
 
-        <span class="value">{{ alliance.value }}</span>
+        <span>{{ alliance.value }}</span>
       </div>
     </div>
   </div>
@@ -72,7 +72,7 @@ export default {
 }
 
 .alliance-heading {
-  font-size: 0.875rem;
+  font-size: 14px;
 }
 .caret{
   transform: rotate(0deg);
@@ -85,7 +85,7 @@ export default {
 .allianceComp {
   width: 100%;
   min-height: 142px;
-  padding: 1.25rem 0;
+  padding: 20px;
   background-color: #333333;
   font-family: "Quattrocento Sans", sans-serif;
   border-radius: 6px;
@@ -96,7 +96,10 @@ export default {
 }
 
 .value {
-  font-size: 0.6875rem;
-  margin-right: 21px;
+  /* font-size: 0.6875rem; */
+  /* margin-right: 21px; */
+}
+.alliance-block {
+  font-size: 14px;
 }
 </style>

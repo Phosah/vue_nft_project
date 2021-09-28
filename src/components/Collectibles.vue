@@ -11,9 +11,9 @@
             <div v-if="showCollectibles" >
                 <div class="collectibles-block d-flex justify-content-between align-items-center flex-wrap rounded-3">
 
-                    <div v-for="collectible in collectibles" :key="collectible.name" class="collectibles-item-box mb-3 mx-2">
+                    <div v-for="collectible in collectibles" :key="collectible.name" class="collectibles-item-box mb-5">
                         <div class=""><img class="collectibles-item__photo" :src="collectible.image" alt="Power Stone"></div>
-                        <p class="mb-1 text-center">{{ collectible.name }}</p>
+                        <p class="collectibles-item__header mb-1 text-center">{{ collectible.name }}</p>
                         <div class="d-flex justify-content-center">
                             <div class="collectibles-item__icon-box d-flex align-items-center me-2 px-2 rounded-pill">
                                 <div class="me-1"><img class="collectibles-item__icon" src="../assets/fire.png" alt="Fire photo"></div>
@@ -103,8 +103,11 @@ export default {
 .collectibles-item__icon-box {
     background-color: #404040;
 }
+.collectibles-item__header {
+    font-size: 12px;
+}
 .collectibles-item__text {
-    font-size: 10px;
+    font-size: 8px;
 }
 .collectibles-item__photo {
     width: 100%;
