@@ -1,12 +1,12 @@
 <template>
-  <div class="SearchBox">
+  <div class="searchBox">
     <input type="text" @input="search" v-model="searchValue" placeholder="Search Cities, Players and Nfts etc." :class="search">
   </div>
 </template>
 
 <script>
   export default {
-  name: 'SearchBox',
+  name: 'searchBox',
   data(){
     return {
       data(){
