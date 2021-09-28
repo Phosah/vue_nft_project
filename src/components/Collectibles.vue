@@ -1,7 +1,6 @@
 <template>
     <div>
         <div class="my-5">
-
             <div class="d-flex justify-content-between my-2">
                 <div class="d-flex align-items-center">
                     <div @click="showMore" class="me-2 caret" ref="caret"><img src="../assets/up-arrow.png" alt="Arrow icon" ></div>
@@ -73,8 +72,7 @@ export default {
             this.showCollectibles = !this.showCollectibles;
             this.$refs.caret.classList.toggle("rotate");
         }
-    }
-    
+    }   
 }
 </script>
 
@@ -86,7 +84,7 @@ export default {
     color: #fff;
 }
 .collectibles-title {
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
 }
 .caret{
