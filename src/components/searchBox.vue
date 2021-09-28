@@ -1,24 +1,24 @@
 <template>
-  <div class="searchBox">
+  <div class="SearchBox">
     <input type="text" @input="search" v-model="searchValue" placeholder="Search Cities, Players and Nfts etc." :class="search">
   </div>
 </template>
 
 <script>
   export default {
-  name: 'searchBox',
+  // name: 'SearchBox',
   data(){
     return {
       data(){
         return{
-          searchValue: ""
+          // searchValue: ""
         }
       }
     }
   },
   methods: {
     search(){
-      this.$emit('handleSearch', this.searchValue)
+      // this.$emit('handleSearch', this.searchValue)
     }
   }
 }
