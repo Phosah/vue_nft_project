@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import SearchBox from "./SearchBox.vue";
+import SearchBox from "./searchBox.vue";
 export default {
   name: "Navbar",
   components: {
@@ -135,4 +135,4 @@ export default {
 .navbarlogo__1:nth-child(3) {
   margin-right: 2rem;
 }
-</style>
+</style>./searchBox.vue

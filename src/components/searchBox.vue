@@ -6,19 +6,19 @@
 
 <script>
   export default {
-  // name: 'SearchBox',
+  name: 'SearchBox',
   data(){
     return {
       data(){
         return{
-          // searchValue: ""
+          searchValue: ""
         }
       }
     }
   },
   methods: {
     search(){
-      // this.$emit('handleSearch', this.searchValue)
+      this.$emit('handleSearch', this.searchValue)
     }
   }
 }
