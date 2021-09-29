@@ -2,7 +2,11 @@
   <div class="m-3">
     <b-row>
       <b-col class="blackMe">
-        <p class="elli mx-1">...</p>
+        <p @click="flipMe" class="elli mx-1">...</p>
+        <div class="topp" v-if="isActive">
+          <!-- @Phosah, this is the slot for her component -->
+          <Tooltip1/>
+        </div>
         <img
           style="width: 100%"
           src="../assets/nftimg.jpeg"
@@ -32,14 +36,33 @@
 </template>
 
 <script>
+import Tooltip1 from '../components/Tooltip1.vue'
+
 export default {
-  name: "nftCard",
-  
+  name: "NftCard",
+  data(){
+    return{
+      isActive: false,
+    }
+  },
+  components:{
+    Tooltip1
+  },
+  methods:{
+    flipMe(){
+      this.isActive != this.isActive
+    }
+  }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+.topp{
+  z-index: 3;
+}
+
 .testing {
   display: flex;
   justify-content: flex-end;
@@ -55,6 +78,7 @@ export default {
   text-align: end;
   color: white;
   font-size: 1.3rem;
+  cursor: pointer;
 }
 .blackMe {
   background-color: #333232 !important;
