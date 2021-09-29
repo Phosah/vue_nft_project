@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="hello mx-3">
     <b-list-group horizontal style="max-width: 640px; max-height: 44px" class="CollectibleNav">
       <b-list-group-item class="all">All</b-list-group-item>
       <b-list-group-item class="art">Artifacts</b-list-group-item>

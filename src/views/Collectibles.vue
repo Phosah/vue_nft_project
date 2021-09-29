@@ -1,47 +1,103 @@
 <template>
-  <div class="home">
-    <div class="mx-5 mx-auto">
-      <section class="home-main">
-        <header>
-            <div class="header">
+  <div class="cont">
+    <nav>
+      <navbar />
+    </nav>
 
-          <CollectibleNavbar />
-            </div>
-        </header>
-        <main class="home-content">
-          <div class="content">
-            <NftCard v-for="n in 5" :key="n" />
-          </div>
-        </main>
-      </section>
-    </div>
+    <b-row class="Collec">
+      <h2 class="m-5">Collectibles</h2>
+    </b-row>
+
+    <b-row align-h="between">
+      <b-col><collectibleNavbar /></b-col>
+      <b-col class="end-this v-al mt-3">
+        <span class="ending army-heading">Recently Added</span>
+        <div>
+          <img
+            src="../assets/armyComponent/caret.png"
+            @click="showArmyMood"
+            ref="caret"
+            class="caret"
+          />
+        </div>
+      </b-col>
+    </b-row>
+
+    <b-row class="m-3">
+      <card-grid />
+    </b-row>
+
+    <b-row>
+      <b-col md="3" v-for="(item, index) in pool" :key="index">
+        <NftCard />
+      </b-col>
+    </b-row>
   </div>
 </template>
 
+
 <script>
-import CollectibleNavbar from "../components/collectibleNavbar.vue";
-import NftCard from "../components/nftCard.vue";
+import Navbar from "../components/Navbar.vue";
+import NftCard from "../components/NftCard.vue";
+import cardGrid from "../components/cardGrid.vue";
+import collectibleNavbar from "../components/collectibleNavbar.vue";
+
 export default {
+  name: "NftCard",
+  data() {
+    return {
+      showArmy: false,
+    };
+  },
   components: {
-    CollectibleNavbar,
     NftCard,
+    Navbar,
+    collectibleNavbar,
+    cardGrid,
+  },
+  methods: {
+    showArmyMood() {
+      this.showArmy = !this.showArmy;
+      this.$refs.caret.classList.toggle("rotate");
+    },
   },
 };
 </script>
 
 <style scoped>
-.home{
-  height: 100vh;
-  background: #222222;
+.cont {
+  background-color: rgba(34, 34, 34, 1);
 }
-.home-main {
-  width: 100%;
-  position: relative;
+
+.v-al {
+  vertical-align: middle;
 }
-.content {
-  display: grid;
-  padding: 30px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 20px;
+
+.end-this {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 4rem;
+}
+
+.ending {
+  text-align: end;
+  padding-right: 0.5rem;
+}
+
+.Collec {
+  color: white;
+}
+
+span {
+  color: white;
+}
+
+.caret {
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+
+.caret.rotate {
+  transform: rotate(180deg);
 }
 </style>
