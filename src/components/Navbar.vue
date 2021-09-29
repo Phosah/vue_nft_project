@@ -42,11 +42,11 @@
 </template>
 
 <script>
-import searchBox from "@/components/searchBox.vue";
+import SearchBox from "@/components/searchBox.vue";
 export default {
   name: "Navbar",
   components: {
-    searchBox
+    SearchBox
   },
   data(){
     return {
