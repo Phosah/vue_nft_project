@@ -67,6 +67,7 @@ export default {
   width: 7px;
 }
 .home-navbar {
+  border-left: 1px solid #A9A9A9;
 }
 .home-main {
   background-color: silver;
